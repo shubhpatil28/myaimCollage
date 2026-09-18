@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-primary: #0F2137;
+    --color-primary-light: #1E3E62;
+    --color-accent: #D97706;
+    --color-accent-gold: #F59E0B;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1E293B;
+    background-color: #FBFBFA;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom aesthetic utility classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.navy-gradient {
+  background: linear-gradient(135deg, #0A192F 0%, #0F2137 50%, #172E4D 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
